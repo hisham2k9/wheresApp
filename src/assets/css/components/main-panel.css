@@ -1,0 +1,40 @@
+
+/*===== COLORS =====*/
+:root {
+    --main-panel-bgcolor: #f4f3ef;
+  }
+
+/*===== DIMENSIONS =====*/
+:root {
+--main-panel-margin-top: 63px;
+--main-panel-content-min-height: 93px;
+}
+  
+/*===== MAIN PANEL START =====*/
+.main-panel {
+  position: relative;
+  float: right;
+  /*left: var(--sidebar-width);*/
+  width: calc(100% - var(--sidebar-width));
+  background-color: var(--main-panel-bgcolor);
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+}
+
+.main-panel>.content {
+  /*padding: 0 30px 30px;*/
+  min-height: calc(100vh - var(--main-panel-content-min-height));
+  margin-top: var(--main-panel-margin-top);
+  transition: all 0.5s ease;
+}
+
+.main-panel>.navbar {
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+
+}
+
+/*===== MAIN PANEL END =====*/

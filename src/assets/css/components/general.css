@@ -1,0 +1,139 @@
+/*===== COLORS =====*/
+:root {
+    --button-primary-color: #12192C;
+    --button-primary-bgcolor: #15C9A8;
+    --button-primary-border-color: #888888;
+
+    --button-primary-hover-color: #ffffff;
+    --button-primary-hover-bgcolor: #15C9A8;
+    --button-primary-hover-border-color: #15C9A8;
+
+    --button-secondary-color: #12192C;
+    --button-secondary-bgcolor: #f5f5f5;
+    --button-secondary-border-color: #888888;
+
+    --button-secondary-hover-color: #ffffff;
+    --button-secondary-hover-bgcolor: tomato;
+    --button-secondary-hover-border-color: red;
+
+    --button-default-color: #888888;
+    --button-default-bgcolor: #888888;
+    --button-default-border-color: #888888;
+}
+
+body {    
+    background-color: #FFFFFF;
+    color: var(--button-default-color);
+    font-size: 14px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    /*font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;*/
+    font-family: "Quicksand", Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    /*zoom: 80%;*/
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    height: 90%;
+    width: 100%;
+}
+  
+h4,
+.h4 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.btn-ninja-primary {
+    border-width: 1px;
+    font-weight: 400;    
+    color: var(--button-primary-color);
+    border-color: var(--button-primary-border-color);
+    background-color: var(--button-primary-bgcolor);
+}
+
+.btn-ninja-primary:hover,
+.open>.btn-ninja-primary.dropdown-toggle {
+    color: var(--button-primary-hover-color);
+    border-color: var(--button-primary-hover-border-color);
+    background-color: var(--button-primary-hover-bgcolor);
+}
+
+.btn-ninja-primary:focus,
+.btn-ninja-primary:active,
+.btn-ninja-primary.active,
+.open>.btn-ninja-primary.dropdown-toggle {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+.btn-ninja-secondary {
+    border-width: 1px;
+    font-weight: 400;    
+    color: var(--button-secondary-color);
+    border-color: var(--button-secondary-border-color);
+    background-color: var(--button-secondary-bgcolor);
+}
+
+.btn-ninja-secondary:hover,
+.open>.btn-ninja-secondary.dropdown-toggle {
+    color: var(--button-secondary-hover-color);
+    border-color: var(--button-secondary-hover-border-color);
+    background-color: var(--button-secondary-hover-bgcolor);
+}
+
+.btn-ninja-secondary:focus,
+.btn-ninja-secondary:active,
+.btn-ninja-secondary.active,
+.open>.btn-ninja-secondary.dropdown-toggle {
+    outline: none !important;
+    box-shadow: none;
+}
+
+label {
+    color: #292929;
+    font-weight: 400;
+}
+
+.bootstrap-select{ 
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 9px;
+    background-color: #f5f5f5;
+    width: 150px;
+
+}
+
+.selectpicker{
+    font-size: 9px !important;
+}
+
+.btn-success {
+    background-color: #28a746d2;
+}
+
+.phone-status {
+    font-size: 1em;
+}
+
+.phone-connected {
+    color: #28a746d2; 
+}
+
+.phone-disconnected {
+    color: tomato; 
+}
+
+.profStar {
+    color: orange;
+}
+
+/*remove outline from readonly text*/
+.form-group .form-control-plaintext:focus {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}

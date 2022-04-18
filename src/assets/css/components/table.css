@@ -1,0 +1,101 @@
+
+/*===== COLORS =====*/
+:root {
+    --table-header-bgcolor: #153C50;
+    --table-header-fgcolor: #15C9A8;
+    --table-hover-bgcolor: #15c9a831;
+    --table-hover-fgcolor: #153C50;
+}
+
+/*===== DIMENSIONS =====*/
+
+/* Datatable all thead, tfoot, td, tr same size and padding */
+table.dataTable>thead>tr>th,
+table.dataTable>tbody>tr>th,
+table.dataTable>tfoot>tr>th,
+table.dataTable>thead>tr>td,
+table.dataTable>tbody>tr>td,
+table.dataTable>tfoot>tr>td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+
+/* Table headers font size */
+table.dataTable thead th {
+    font-size: 14px;
+    color: white;
+    background-color: var(--table-header-bgcolor);
+}
+   
+/* Table headers border style */
+table.dataTable thead th:first-child {
+    border-top-left-radius: 4px;
+}
+
+table.dataTable thead th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.page-item.active .page-link {
+    color: white;
+    background-color: var(--table-header-bgcolor);
+}
+
+/* Table content font size */
+table.dataTable tbody tr {
+    font-size: 14px;
+}
+
+/* Show entries font size */
+.dataTables_length select {
+    font-size: 14px !important;
+    width: 30px;
+}
+
+
+/* Search filter location */
+.dataTables_filter {
+    float: right !important;
+}
+
+/* Edit buttons location */
+.btc-table-edit-controls {
+    float: left !important;
+    padding-bottom: 10px;
+}
+
+/* Table odd numbered rows */
+.btc-table-striped tbody tr:nth-of-type(odd){
+    color: var(--table-hover-fgcolor);
+    background-color: #f5f5f5
+}
+
+/* Table even numbered rows */
+.btc-table-striped tbody tr:nth-of-type(even){
+    color: var(--table-hover-fgcolor);
+    background-color: #fff
+}
+
+/* Table row hover */
+.btc-table-hover tbody tr:hover{
+    color: var(--table-hover-fgcolor);
+    background-color: var(--table-hover-bgcolor);
+}
+
+/* Table row selected */
+.btc-table-selected tbody tr.selected {
+    color: black;
+    background-color: #ffd69d;
+}
+
+/* Table row selected */
+.btc-table-header thead {
+    color: white;
+    background-color: var(--table-header-fgcolor);
+}
+
+table.dataTable tbody tr.selected {
+    color: var(--table-hover-fgcolor);
+    background-color: var(--table-hover-bgcolor)
+}

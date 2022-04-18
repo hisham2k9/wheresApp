@@ -1,0 +1,39 @@
+.ivr-pallet {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #534f4f;
+	border-radius: 20px;
+	font-size: large;
+	padding: 5px;
+}
+.conn-pallet {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #534f4f;
+	border-radius: 20px;
+	font-size: large;
+	padding: 0px;
+}
+.pallet-instance {
+	position: absolute;
+	z-index: 9;
+	cursor: col-resize;
+	resize: horizontal; 
+	overflow: auto;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #534f4f;
+	border-radius: 20px;
+	font-size: large;
+	padding: 20px;
+}
+.pallet-inner {
+	padding: 0px;
+	cursor: move;
+	z-index: 10;
+	background-color: #2196F3;
+	color: #fff;
+	border-radius: 10px;
+  }
+  
+

@@ -1,0 +1,29 @@
+.play-controls {
+    display: inline-flex;
+}
+
+.play-controls i {
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.play-controls .fa-play {
+    color: green;
+}
+
+.play-controls .fa-pause {
+    color: orange
+}
+
+.play-controls .fa-undo {
+    color: tomato
+}
+
+.play-controls .fa-stop {
+    color: black;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <!--     fonts and icons     -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
+    <!-- core css -->
+    <link href="../assets/css/core/reset.css" rel="stylesheet">
+    <link href="../assets/css/core/bootstrap.min.css" rel="stylesheet">
+     <!-- plugins css -->
+     <link href="../assets/css/plugins/bootstrap-select.css" rel="stylesheet"/>
+     <link href="../assets/css/plugins/select.dataTables.min.css" rel="stylesheet"/>
+     <link href="../assets/css/plugins/dataTables.bootstrap4.min.css" rel="stylesheet"/>
+     <link href="../assets/css/plugins/toastr.css" rel="stylesheet"/>
+     <!-- components css -->
+     <link href="../assets/css/components/style.css" rel="stylesheet"/>
+
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}
+</style>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="d-flex flex-column pt-3" id="content-wrapper">
+            <div id="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-2 mb-4">
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow bg-red py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">TOTAL CODE REVIEWS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>198</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-code" aria-hidden="true"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">TOTAL TDD REVIEWS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>198</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-file"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">TOTAL APPSCANS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>500</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-search"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">OPEN ISSUES</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>100</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-alert"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">WRAP TIME</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>00:03:04</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="far fa-clipboard"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-8 mb-4">                            
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <canvas id="chart-aph" style="display: block; height: 300px; width: 800px;" width="1000" height="300" class="chartjs-render-monitor"></canvas>
+                                </div>
+                            </div>                                                      
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-4 mb-2">
+                                    <div class="card shadow mb-4" style="height: 65%;">
+                                        <div class="card-header py-3">
+                                            <h6 class="bcx-fgcolor font-weight-bold m-0">Average Handling Time<br></h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="small font-weight-bold">IBM Middleware<span class="float-right">00:02:13</span></h4>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-primary" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="sr-only">90%</span></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Online Servce<span class="float-right">00:02:25</span></h4>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-danger" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="sr-only">100%</span></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">EDGE<span class="float-right">02:00:00</span></h4>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar bg-success" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="sr-only">80%</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                             
+                                <div class="col-md-12 col-xl-3 mb-2"> 
+                                    <div class="row">                                
+                                        <div class="col-md-12 col-xl-12 mb-4">                                   
+                                            <canvas id="chart-satisfaction" style="display: block; height: 100px; width: 100px;" width="1000" height="100" class="chartjs-render-monitor"></canvas>
+                                            <div id="total" style="position:absolute;left:0px;top:40%;height:100%;width:100%;text-align:center;color:navy;font-size:2vw;">99.9%</div>
+                                            <div id="total" style="position:absolute;left:0px;top:100%;height:100%;width:100%;text-align:center;color:black;font-size:1vw;">Services UpTime</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">                                
+                                        <div class="col-md-12 col-xl-12 mb-4">                                   
+                                            <canvas id="chart-adherence" style="display: block; height: 100px; width: 100px;" width="1000" height="100" class="chartjs-render-monitor"></canvas>
+                                            <div id="total" style="position:absolute;left:0px;top:50%;height:100%;width:100%;text-align:center;color:darkgreen;font-size:2vw;">100%</div>
+                                            <div id="total" style="position:absolute;left:0px;top:100%;height:100%;width:100%;text-align:center;color:black;font-size:1vw;">Security Compliance</div>
+                                        </div>
+                                    </div>
+                                </div>                          
+                                <!--
+                                <div class="col-md-12 col-xl-5 mb-2">                                    
+                                    <div class="card shadow mb-4" style="height: 65%;">
+                                        <div class="card-header py-3">
+                                            <h6 class="bcx-fgcolor font-weight-bold m-0">Top Trends</h6>
+                                        </div>
+                                        <ul class="list-group list-group-flush overflow-auto">
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>AppScans Reports</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">Mar 31st, 2022 - 08:00 AM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-success">Last Report</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-sign-in-alt"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Break</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">10:30 AM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-success">Adhered</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-mug-hot"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Work</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">10:45 AM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-success">Adhered</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-headset"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Lunch</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">01:15 PM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-success">Adhered</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-utensils"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Work</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">02:00 PM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-danger">Deviated</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-headset"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Break</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">03:30 PM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs bcx-fgcolor">In 2 min</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-mug-hot"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Work</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">03:45 PM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-secondary">Scheduled</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-headset"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-between">
+                                                    <div class="col mr-2">
+                                                        <h6 class="mb-0"><strong>Logout</strong></h6>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs">05:00 PM</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs text-secondary">Scheduled</span>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <span class="text-xs"><i class="fas fa-sign-out-alt"></i></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2 mb-4">
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">TOTAL APPS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>15</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fas fa-apps"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">ALERTS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>1000</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fab fa-alerts"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">UPTIME</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>99.9</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="far fa-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">REST HITS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>10000000</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fab fa-rest"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">                                
+                                <div class="col-md-12 col-xl-12 mb-2">
+                                    <div class="card shadow  py-2">
+                                        <div class="card-body">
+                                            <div class="row align-items-center no-gutters">
+                                                <div class="col mr-2">
+                                                    <div class="text-uppercase bcx-fgcolor font-weight-bold text-xs mb-1"><span style="font-size: 12px;">DOCS</span></div>
+                                                    <div class="text-dark font-weight-bold h5 mb-0"><span>13</span></div>
+                                                </div>
+                                                <div class="col-auto"><i class="fab fa-docs"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+
+	<script src="../assets/js/plugins/charts/js/analytics.js"></script>
+	<script src="../assets/js/plugins/charts/js/Chart.min.js"></script>
+	<script src="../assets/js/plugins/charts/js/utils.js"></script>
+    <script src="../assets/js/plugins/charts/js/analyser.js"></script>
+	<script>
+		var presets = window.chartColors;
+		var utils = Samples.utils;
+        //------ Start Answered Per Hour Chart ---------------------------------
+		var dataAPH = {
+			labels: ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"],
+			datasets: [{
+				backgroundColor: utils.transparentize(presets.red),
+				borderColor: presets.red,
+				data: [0,0,0,0,0,0,0,18,19,20,19,20,19,18,17,1,0,0,0,0,0,0,0,0],
+				label: 'Incomming Issues',
+				fill: true
+			},{
+				backgroundColor: utils.transparentize(presets.blue),
+				borderColor: presets.blue,
+				data: [5,4,5,6,3,12,15,19,18,22,21,19,18,16,18,20,18,21,19,15,12,14,6,7],
+				label: 'Resolved Issues',
+				fill: true
+			}]
+		};
+
+		var optionsAPH = {
+			maintainAspectRatio: false,
+			spanGaps: false,
+			elements: {
+				line: {
+					tension: 0.4
+				}
+			},
+			scales: {
+				yAxes: [{
+					stacked: false
+				}]
+			},
+			plugins: {
+				filler: {
+					propagate: false
+				},
+				'samples-filler-analyser': {
+					target: 'chart-analyser'
+				}
+			}
+		};
+
+		var chart = new Chart('chart-aph', {
+			type: 'line',
+			data: dataAPH,
+			options: optionsAPH
+        });
+        //------ End Answered Per Hour Chart ---------------------------------
+        
+
+        //------ Start Satisfaction Guage ---------------------------------
+		var dataSAT = {
+			labels: [],
+			datasets: [{
+				backgroundColor: [utils.transparentize(presets.green),utils.transparentize(presets.red)],
+				borderColor: presets.green,
+				data: [90,10],
+				label: ['Satisfied','Not Satisfied'],
+				fill: false
+			}]
+		};
+
+		var optionsSAT = {
+            circumference: 1.5*Math.PI,
+            rotation: 0.75*Math.PI,
+            cutoutPercentage: 85,
+			maintainAspectRatio: false,
+			spanGaps: false,
+			elements: {
+				line: {
+					tension: 1
+				}
+			},
+            gridLines: {
+                display: false
+            },
+			plugins: {
+				filler: {
+					propagate: false
+				},
+				'samples-filler-analyser': {
+					target: 'chart-analyser'
+				}
+			}
+		};
+
+		var chart = new Chart('chart-satisfaction', {
+			type: 'doughnut',
+			data: dataSAT,
+            options: optionsSAT
+        });
+
+
+        //------ End Satisfaction Guage ---------------------------------
+        
+        //------ Start Adherence Guage ---------------------------------
+
+		var dataADH = {
+			labels: [],
+			datasets: [{
+				backgroundColor: [utils.transparentize(presets.green),utils.transparentize(presets.red)],
+				borderColor: presets.green,
+				data: [97,3],
+				label: ['Adherence','Not Adherent'],
+				fill: false
+			}]
+		};
+
+		var optionsADH = {
+            circumference: 1.5*Math.PI,
+            rotation: 0.75*Math.PI,
+            cutoutPercentage: 85,
+			maintainAspectRatio: false,
+			spanGaps: false,
+			elements: {
+				line: {
+					tension: 1
+				}
+			},
+            gridLines: {
+                display: false
+            },
+			plugins: {
+				filler: {
+					propagate: false
+				},
+				'samples-filler-analyser': {
+					target: 'chart-analyser'
+				}
+			}
+		};
+        
+		var chart = new Chart('chart-adherence', {
+			type: 'doughnut',
+			data: dataADH,
+            options: optionsADH
+        });
+
+        
+        //------ End Satisfaction Guage ---------------------------------
+
+	</script>
+</body>
+
+</html>
